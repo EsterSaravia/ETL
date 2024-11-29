@@ -9,10 +9,10 @@ ETL
 /airflow_env   # Ambiente para execução do Apache Airflow 
 /dataset   # Dados brutos utilizados no projeto 
    --empresas comparadas.csv 
-   --superstore.csv /etlTL 
---pycache 
---README.md   # Descrição do módulo 
+   --superstore.csv 
 /etl 
+   --pycache 
+   --README.md   # Descrição do módulo 
    --extract.py   # Script para extração dos dados 
    --transform.py   # Script para transformação dos dados 
    --load.py   # Script para carga dos dados no SQLite 
