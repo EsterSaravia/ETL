@@ -72,13 +72,9 @@ Configurar o backend do Airflow (SQLite ou PostgreSQL).
 ---
 
 **2. Executar o ETL**
-- Executar os scripts na pasta /etl em sequência:
+- Executar o arquivo:
 
-python etl/extract.py
-
-python etl/transform.py
-
-python etl/load.py
+main.py
 
 **3. Rodar os Notebooks**
 - Abra os notebooks com Jupyter:
