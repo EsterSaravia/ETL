@@ -71,9 +71,17 @@ Configurar o backend do Airflow (SQLite ou PostgreSQL).
 
 ---
 
-**2. Rodar os Notebooks**
-- Abra os notebooks com Jupyter:
-  ```bash
+**2. Executar o ETL**
+Executar os scripts na pasta /etl em sequência:
+
+python etl/extract.py
+python etl/transform.py
+python etl/load.py
+
+---
+
+**3. Rodar os Notebooks**
+Abra os notebooks com Jupyter:
 jupyter notebook
 
 -**Execute:**
@@ -82,25 +90,23 @@ modelagem.ipynb para modelagem preditiva.
 
 ---
 
-**3. Automação com Airflow**
+**4. Automação com Airflow**
 Adicione o DAG etl_pipeline_dag.py na pasta dags do seu Airflow.
 Inicie o Airflow:
-```bash
 airflow webserver & airflow scheduler
+
 Habilite e execute o DAG na interface web (http://localhost:8080).
 
 ---
 
-**4. Migração para PostgreSQL**
+**5. Migração para PostgreSQL**
 Execute o script migracao.py:
-```bash
 python migracao.py
 
 ---
 
-**5. Scraping de Dados de Concorrentes**
+**6. Scraping de Dados de Concorrentes**
 Execute o script de scraping:
-```bash
 python scraping_multinacionais.py
 
 ---
